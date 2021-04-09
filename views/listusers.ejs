@@ -1,0 +1,49 @@
+<!doctype html>
+                                                                                                                                                                                        
+<html>
+                                                                                                                                                                                        
+  <head>
+<style>
+                                                                                                                                                                                                          
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+                                                                                                                                                                                                           
+h3 {
+color: white;
+}
+
+ul {
+  font-family: verdana;
+  font-size: 20px;
+}
+</style>
+                                                                                                                                                                                        
+    <title>List  webpage!</title>
+                                                                                                                                                                                        
+  </head>
+                                                                                                                                                                                        
+    <h1> This is the  ListUsers Page </h1>
+                                                                                                                                                                                        
+          <body>
+                                                                                                                                                                                        
+            <h3>Here are the list of users:</h3>
+                                                                                                                                                                                        
+            <ul>
+                                                                                                                                                                                        
+              <% availableusers.forEach(function(users){ %>
+                                                                                                                                                                                        
+              <li>First Name: <%= users.first %>, Last Name: <%= users.last %>, Email: <%= users.email %>, Username: <%= users.name %></li>
+                                                                                                                                                                                        
+             <% }) %>
+                                                                                                                                                                                        
+            </ul>
+                                                                                                                                                                                        
+  </body>
+<a href='./'>Home</a>
+</html>

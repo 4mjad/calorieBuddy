@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        
+        <!-- Custom Font -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,700" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/custom.css">
+
+        <!-- Add icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <title>Add Food</title>
+
+    </head>
+
+  <body>
+                                                                                                                                                                                                           
+       <!-- Navigation -->
+       <nav>
+                                                                                                                                                                                                            
+        <!--Main container for navigation bar-->
+        <div class="header">
+                                                                                                                                                                                                            
+                <!--Container for logo-->
+                <div class="inner_header">
+                                                                                                                                                                                                            
+                        <!--Creating the logo - span is used to style each word individually-->
+                        <div class="logo_container"><h1>calorie<span>Buddy</span></h1>
+
+                        </div>
+                                                                                                                                                                                                            
+                        <!--Creates unordered bulleted lists-->
+                        <ul class ="navigation">
+                                <!--List for navigation buttons with links to the web pages-->
+                                <a href='./'>Home</a>
+                                <a href='/about'>About</a>
+                                <a href='/search'>Search</a>
+                                <a href='/list'>List Food</a>
+                                <a href='/addfood'>Add Food</a>
+                                <a href='/updatefood'>Update Food</a>
+                                <a href='/api'>API</a>
+                                <a href='/register'>Register</a>
+                                <a href='/login'>Login</a>
+                                <a href='/logout'>Logout</a>
+                        </ul>
+                                                                                                                                                                                                            
+                        <!--Social media icons-->
+                                                                                                                                                                                                           
+                        <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
+                                                                                                                                                                                                           
+                        <a href="https://twitter.com/" target="_blank" class="fa fa-twitter"></a>
+                                                                                                                                                                                                          
+                        <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>                                                                                                                                                                                       
+                </div>
+        </div>
+                                                                                                                                                                                                           
+        </nav>
+	
+	<main>
+
+	<br>
+                                                                                                                                                   
+    	<p>Please fill related data to add the details of the food item to the database</p>
+
+	<div class="form">
+ 
+		 <form method="POST" action="/foodadded">                                                                                                                                                                                      
+  		<label for="name">Food name <small> (Cannot be empty) </small> </label>
+  		<input id="name" type="text" name="name"/><br>
+                                                                                                                                                     
+  		<label for="value">Food value <small> (Has to be number) </small> </label>
+  		<input id="value" type="text" name="value"/><br>
+
+  		<label for="unit">Unit of the value <small> (Cannot be empty) </small> </label>
+  		<input id="unit" type="text" name="unit"/><br>
+
+  		<label for="calories">Calories <small> (Has to be number) </small> </label>
+  		<input id="calories" type="text" name="calories"/><br>
+
+  		<label for="carbs">Carbs <small> (Has to be number) </small> </label>
+  		<input id="carbs" type="text" name="carbs"/><br>
+
+  		<label for="fat">Fat <small> (Has to be number) </small> </label>
+  		<input id="fat" type="text" name="fat"/><br>
+
+  		<label for="protein">Protein <small> (Has to be number) </small> </label>
+	  	<input id="protein" type="text" name="protein"/><br>
+
+  		<label for="salt">Salt <small> (Has to be number) </small> </label>
+  		<input id="salt" type="text" name="salt"/><br>
+
+  		<label for="sugar">Sugar <small>( Has to be number) </small> </label>
+  		<input id="sugar" type="text" name="sugar"/>
+                                                                                                                                                                                        
+  		<input type="submit" value="Submit">
+                                                                                                                                                                                      
+		</form>
+	</div>
+                                                                                                                                                                                                
+ </body>
+
+</html>                                                                                                                                                                              
